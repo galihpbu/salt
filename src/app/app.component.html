@@ -1,0 +1,201 @@
+<body class="body" *ngIf="filtersLoaded | async">
+
+  <div id="header" class="headerrrr w-clearfix">
+    <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b6a409a98466704dd824_logo.jpg" width="200"
+      alt="" class="image" />
+    <div class="div-block">
+      <div class="w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" class="form w-clearfix">
+          <input type="text" class="text-field-2 w-input" maxlength="256" name="name" data-name="Name"
+            placeholder="Find..." id="name" />
+        </form>
+      </div>
+    </div>
+    <div class="div-block-2">
+      <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b9a2fe41fb83c83ef0c9_search.png" width="15"
+        srcset="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b9a2fe41fb83c83ef0c9_search-p-500.png 500w, https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b9a2fe41fb83c83ef0c9_search.png 512w"
+        sizes="(max-width: 767px) 15px, (max-width: 991px) 2vw, 15px" alt="" />
+    </div>
+    <div class="div-block-3 w-clearfix">
+      <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b9a269567596596cce67_up.png" width="10"
+        alt="" class="image-2" />
+      <div class="text-block">Upload</div>
+    </div>
+    <div class="div-block-4 w-clearfix">
+      <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b9a3e8d859a5ca3081f5_user.png" width="10"
+        srcset="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b9a3e8d859a5ca3081f5_user-p-500.png 500w, https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86b9a3e8d859a5ca3081f5_user.png 512w"
+        sizes="(max-width: 767px) 10px, 1vw" alt="" class="image-3" />
+    </div>
+    <div class="text-block-3">Galih
+      <br />
+    </div>
+    <div class="text-block-4">Pambudi</div>
+  </div>
+  <div class="pagination">
+    <a href="#" class="link-block w-inline-block w-clearfix">
+      <div class="text-block-5">Videos</div>
+      <div class="separate">/</div>
+      <div class="text-block-5">People</div>
+      <div class="separate">/</div>
+      <div class="text-block-5">Documents</div>
+      <div class="separate">/</div>
+      <div class="text-block-5">Events</div>
+      <div class="separate">/</div>
+      <div class="text-block-5">Communities</div>
+      <div class="separate">/</div>
+      <div class="text-block-5">Favorites</div>
+      <div class="separate">/</div>
+      <div class="text-block-5">Chanels</div>
+    </a>
+  </div>
+  <div class="contentfirst w-clearfix">
+    <div class="div-block-6 w-clearfix">
+      <div class="w-clearfix">
+        <div class="div-block-20 w-clearfix">
+          <div class="text-block-10">Videos</div>
+          <div class="text-block-11">Browse all videos</div>
+        </div>
+        <div class="div-block-21"></div>
+      </div>
+      <div class="div-block-9">
+        <div class="div-block-12"
+          [ngStyle]="{ 'background-image': 'url(' + mainData.articles[8].urlToImage + ')', 'background-size':'cover'}">
+        </div>
+        <div class="div-block-13 w-clearfix">
+          <div class="div-block-15"></div>
+          <div class="div-block-14"></div>
+        </div>
+      </div>
+      <div class="div-block-10">
+        <div class="div-block-11"></div>
+        <div class="div-block-11"></div>
+        <div class="div-block-11"></div>
+      </div>
+    </div>
+    <div class="div-block-7">
+      <div class="div-block-22 w-clearfix">
+        <div class="div-block-23">
+          <div class="text-block-12">Activity</div>
+        </div>
+        <div class="div-block-24 w-clearfix">
+          <div class="text-block-13">View timeline/ filter activities</div>
+        </div>
+      </div>
+      <div class="div-block-16 w-clearfix">
+        <div class="div-block-17">
+          <div class="div-block-18" [ngStyle]="{ 'background-image': 'url(' + mainData.articles[0].urlToImage + ')'}">
+          </div>
+        </div>
+        <div class="div-block-19 w-clearfix">
+          <div class="text-block-6">{{mainData.articles[0].author}}</div>
+          <div class="text-block-7">Commented</div>
+          <div class="text-block-8">{{mainData.articles[0].title}}</div>
+          <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86c89806a3a384ff95ebcb_comment%20(1).png"
+            width="10" alt="" class="image-5" />
+          <div class="text-block-9">2 seconds ago</div>
+        </div>
+      </div>
+      <div class="div-block-16 w-clearfix">
+        <div class="div-block-17">
+          <div class="div-block-18" [ngStyle]="{ 'background-image': 'url(' + mainData.articles[1].urlToImage + ')'}">
+          </div>
+        </div>
+        <div class="div-block-19 w-clearfix">
+          <div class="text-block-6">{{mainData.articles[1].author}}</div>
+          <div class="text-block-7">Commented</div>
+          <div class="text-block-8">{{mainData.articles[1].title}}</div>
+          <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86c89806a3a384ff95ebcb_comment%20(1).png"
+            width="10" alt="" class="image-5" />
+          <div class="text-block-9">2 seconds ago</div>
+        </div>
+      </div>
+      <div class="div-block-16 w-clearfix">
+        <div class="div-block-17">
+          <div class="div-block-18" [ngStyle]="{ 'background-image': 'url(' + mainData.articles[2].urlToImage + ')'}">
+          </div>
+        </div>
+        <div class="div-block-19 w-clearfix">
+          <div class="text-block-6">{{mainData.articles[2].author}}</div>
+          <div class="text-block-7">Commented</div>
+          <div class="text-block-8">{{mainData.articles[2].title}}</div>
+          <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86c89806a3a384ff95ebcb_comment%20(1).png"
+            width="10" alt="" class="image-5" />
+          <div class="text-block-9">2 seconds ago</div>
+        </div>
+      </div>
+      <div class="div-block-16 w-clearfix">
+        <div class="div-block-17">
+          <div class="div-block-18" [ngStyle]="{ 'background-image': 'url(' + mainData.articles[3].urlToImage + ')'}">
+          </div>
+        </div>
+        <div class="div-block-19 w-clearfix">
+          <div class="text-block-6">{{mainData.articles[3].author}}</div>
+          <div class="text-block-7">Commented</div>
+          <div class="text-block-8">{{mainData.articles[3].title}}</div>
+          <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86c89806a3a384ff95ebcb_comment%20(1).png"
+            width="10" alt="" class="image-5" />
+          <div class="text-block-9">2 seconds ago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contentsecond w-clearfix">
+    <div class="div-block-6 w-clearfix">
+      <div class="w-clearfix">
+        <div class="div-block-20 w-clearfix">
+          <div class="text-block-10">Videos</div>
+          <div class="text-block-11">Browse all videos</div>
+        </div>
+        <div class="div-block-21"></div>
+      </div>
+      <div class="div-block-9">
+        <div class="div-block-12"></div>
+        <div class="div-block-13 w-clearfix">
+          <div class="div-block-15"></div>
+          <div class="div-block-14"></div>
+        </div>
+      </div>
+      <div class="div-block-10">
+        <div class="div-block-11"></div>
+        <div class="div-block-11"></div>
+        <div class="div-block-11"></div>
+      </div>
+      <div class="div-block-25"></div>
+      <div class="div-block-9">
+        <div class="div-block-12"></div>
+        <div class="div-block-13 w-clearfix">
+          <div class="div-block-15"></div>
+          <div class="div-block-14"></div>
+        </div>
+      </div>
+      <div class="div-block-10">
+        <div class="div-block-11"></div>
+        <div class="div-block-11"></div>
+        <div class="div-block-11"></div>
+      </div>
+    </div>
+    <div class="div-block-7">
+      <div class="div-block-22 w-clearfix">
+        <div class="div-block-23">
+          <div class="text-block-12">News</div>
+        </div>
+        <div class="div-block-24 w-clearfix">
+          <div class="text-block-13">View timeline/ filter activities</div>
+        </div>
+      </div>
+      <div class="div-block-16 w-clearfix" *ngFor="let article of articles">
+        <div class="div-block-17">
+          <div class="div-block-18" [ngStyle]="{ 'background-image': 'url(' + article.urlToImage + ')'}"></div>
+        </div>
+        <div class="div-block-19 w-clearfix">
+          <div class="text-block-6">{{article.author}}</div>
+          <div class="text-block-7">Commented</div>
+          <div class="text-block-8">{{article.description}}</div>
+          <img src="https://uploads-ssl.webflow.com/5e8465e05b6234c1af97d7f8/5e86c89806a3a384ff95ebcb_comment%20(1).png"
+            width="10" alt="" class="image-5" />
+          <div class="text-block-9"> {{article.publishedAt}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
