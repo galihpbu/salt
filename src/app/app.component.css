@@ -1979,9 +1979,11 @@ textarea.w-select {
 
 .pagination {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-top: 1px solid #f7e2cf;
     border-bottom: 1px solid #f7e2cf;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .link-block {

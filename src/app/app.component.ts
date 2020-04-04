@@ -13,16 +13,12 @@ export class AppComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    if (this.mainData.length == 0) {
-      console.log('ass');
+    if (this.mainData.length == 0) { 
     } else { return; }
-    this.apiService.getNews().subscribe((data) => {
-      console.log(data);
+    this.apiService.getNews().subscribe((data) => { 
       this.articles = data['articles'];
-      this.mainData = data;
-      console.log(this.mainData);
-      this.filtersLoaded = Promise.resolve(true);
-      console.log(this.filtersLoaded);
+      this.mainData = data; 
+      this.filtersLoaded = Promise.resolve(true); 
 
     });
   }
